@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ein:</strong>
+  <%= @award.ein %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @award.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @award.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @award.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @award.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @award.zip %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @award.amount %>
+</p>
+
+<p>
+  <strong>Amount GBP:</strong>
+  <%= @award.amount_gbp %>
+</p>
+
+<p>
+  <strong>Purpose:</strong>
+  <%= @award.purpose %>
+</p>
+
+<p>
+  <strong>Filer ein:</strong>
+  <%= @award.filer_ein %>
+</p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= @award.filename %>
+</p>
+
+<p>
+  <strong>Uploaded at:</strong>
+  <%= @award.uploaded_at %>
+</p>
+
+<%= link_to 'Edit', edit_award_path(@award) %> |
+<%= link_to 'Back', awards_path %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ein:</strong>
+  <%= @receiver.ein %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @receiver.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @receiver.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @receiver.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @receiver.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @receiver.zip %>
+</p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= @receiver.filename %>
+</p>
+
+<p>
+  <strong>Uploaded at:</strong>
+  <%= @receiver.uploaded_at %>
+</p>
+
+<%= link_to 'Edit', edit_receiver_path(@receiver) %> |
+<%= link_to 'Back', receivers_path %>

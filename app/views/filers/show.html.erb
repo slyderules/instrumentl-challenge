@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ein:</strong>
+  <%= @filer.ein %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @filer.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @filer.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @filer.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @filer.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @filer.zip %>
+</p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= @filer.filename %>
+</p>
+
+<p>
+  <strong>Uploaded at:</strong>
+  <%= @filer.uploaded_at %>
+</p>
+
+<%= link_to 'Edit', edit_filer_path(@filer) %> |
+<%= link_to 'Back', filers_path %>

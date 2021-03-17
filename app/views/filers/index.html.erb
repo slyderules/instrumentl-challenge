@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Filers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ein</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>Filename</th>
+      <th>Uploaded at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @filers.each do |filer| %>
+      <tr>
+        <td><%= filer.ein %></td>
+        <td><%= filer.name %></td>
+        <td><%= filer.address %></td>
+        <td><%= filer.city %></td>
+        <td><%= filer.state %></td>
+        <td><%= filer.zip %></td>
+        <td><%= filer.filename %></td>
+        <td><%= filer.uploaded_at %></td>
+        <td><%= link_to 'Show', filer %></td>
+        <td><%= link_to 'Edit', edit_filer_path(filer) %></td>
+        <td><%= link_to 'Destroy', filer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Filer', new_filer_path %>
